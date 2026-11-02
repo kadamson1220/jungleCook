@@ -1,0 +1,43 @@
+@media (max-width: 1100px) {
+  .site-header {
+    padding: 23px 6%;
+  }
+
+  .menu-button {
+    display: flex;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 72px;
+    right: 6%;
+    display: none;
+    width: min(280px, calc(100vw - 40px));
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+    padding: 12px 20px 18px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+    font-size: 18px;
+  }
+
+  .site-nav--open {
+    display: flex;
+  }
+
+  .site-nav a:not(.site-nav__login) {
+    padding: 12px 2px;
+  }
+
+  .site-nav__login {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1101px) {
+  .site-nav__login {
+    min-width: 112px;
+  }
+}

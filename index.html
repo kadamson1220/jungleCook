@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Jungle Cook is a home for recipes and home cooks."
+    />
+    <meta name="theme-color" content="#ffdc76" />
+    <title>The Jungle Cook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="#home" aria-label="The Jungle Cook home">
+          <span class="brand__the">The</span>
+          <span class="brand__jungle">Jungle</span>
+          <span class="brand__cook">Cook</span>
+        </a>
+        <button
+          class="menu-button"
+          id="menuButton"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mainNav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="mainNav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#browse" data-coming-soon>Browse</a>
+          <a href="#create" data-coming-soon>Create Recipe</a>
+          <a class="site-nav__login" href="#login">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="app"></main>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
